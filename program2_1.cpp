@@ -16,7 +16,7 @@ using namespace std;
 void public_function(string arg){
 	char buffer[BUFSIZE];
 	memset(buffer, 'B', BUFSIZE);
-	if(arg.size<=BUFSIZE)
+	if(arg.size()<=BUFSIZE)
 		strcpy(buffer, arg.c_str());
 }
 
