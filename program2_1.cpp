@@ -9,14 +9,15 @@
 #include <sstream>
 #define BUFSIZE 16
 
-//
+//Verify the validity of the User's input
 
 using namespace std;
 
 void public_function(string arg){
 	char buffer[BUFSIZE];
 	memset(buffer, 'B', BUFSIZE);
-	strcpy(buffer, arg.c_str());
+	if(arg.size<=BUFSIZE)
+		strcpy(buffer, arg.c_str());
 }
 
 void secret(void){

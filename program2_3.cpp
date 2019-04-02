@@ -9,7 +9,7 @@
 #include <sstream>
 #define BUFSIZE 16
 
-//
+//Verify that the control flow hasn't been tampered with
 
 using namespace std;
 

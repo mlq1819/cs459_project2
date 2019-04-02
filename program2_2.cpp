@@ -9,7 +9,7 @@
 #include <sstream>
 #define BUFSIZE 16
 
-//
+//Verify inside the secret() method that the UID is correct
 
 using namespace std;
 
@@ -20,7 +20,10 @@ void public_function(string arg){
 }
 
 void secret(void){
-	cout << "SECRET TUNNEL" << endl;
+	string temp = "SECRET TUNNEL";
+	if(getuid()!=0)
+		return;
+	cout << temp << endl;
 	exit(0);
 }
 
