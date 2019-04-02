@@ -1,6 +1,6 @@
-P=program1
-Q=program2
-S=program3
+P=program2_2
+Q=program2_1
+S=program2_3
 CFLAGS= -g -Wall
 
 all: $(P) $(Q) $(S)
